@@ -32,7 +32,9 @@ function analyze() {
       
       var i= `Result = ${response["result"]}`;
       el("result-label").innerHTML =i;
-      console.log(i);
+      if(i==="Mouth_Ulcer")
+          el("result").innerHTML="https://www.google.com";
+         
     }
     el("analyze-button").innerHTML = "Analyze";
   };
