@@ -31,10 +31,8 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       
       var i= `Result = ${response["result"]}`;
-      el("result-label").innerHTML =i;
-      if(i=="Mouth_Ulcer"){
-      el("result").href="https://www.google.com";
-      }
+       el("result-label").innerHTML =i;
+      document.getElementById("result").href="https://www.healthline.com/health/mouth-ulcers/";
       }
     el("analyze-button").innerHTML = "Analyze";
   };
